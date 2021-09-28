@@ -1,7 +1,7 @@
 {
     "name": "yt-downloader",
-    "version": "0.0.1beta-D",
-    "description": "Simple Youtube Videos Downloader",
+    "version": "0.0.2",
+    "description": "Youtube Videos Downloader",
     "main": "index.js",
     "type": "module",
     "scripts": {
@@ -14,6 +14,7 @@
         "express": "^4.17.1",
         "fs": "0.0.1-security",
         "path": "^0.12.7",
+        "serve-favicon": "^2.5.0",
         "url": "^0.11.0",
         "ytdl-core-muxer": "^1.0.1"
     }

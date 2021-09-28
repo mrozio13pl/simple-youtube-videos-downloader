@@ -1,1 +1,47 @@
-<script>document.write(unescape('%3C%68%74%6D%6C%3E%0A%20%20%20%20%3C%68%65%61%64%3E%0A%20%20%20%20%3C%2F%68%65%61%64%3E%0A%20%20%20%20%3C%62%6F%64%79%3E%0A%20%20%20%20%3C%64%69%76%3E%3C%69%6E%70%75%74%20%69%64%3D%22%79%74%6C%69%6E%6B%22%20%70%6C%61%63%65%68%6F%6C%64%65%72%3D%22%4C%69%6E%6B%22%3E%3C%62%75%74%74%6F%6E%20%69%64%3D%22%64%6F%77%6E%6C%6F%61%64%22%3E%44%6F%77%6E%6C%6F%61%64%3C%2F%62%75%74%74%6F%6E%3E%3C%70%20%69%64%3D%22%73%74%61%74%75%73%22%20%73%74%79%6C%65%3D%22%64%69%73%70%6C%61%79%3A%20%6E%6F%6E%65%22%3E%49%6E%76%61%6C%69%64%20%55%52%4C%21%3C%2F%70%3E%3C%2F%64%69%76%3E%0A%20%20%20%20%3C%73%63%72%69%70%74%20%73%72%63%3D%22%2E%2F%6A%73%2F%72%65%71%2E%6A%73%22%3E%3C%2F%73%63%72%69%70%74%3E%0A%20%20%20%20%3C%2F%62%6F%64%79%3E%0A%3C%2F%68%74%6D%6C%3E'));</script>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.2/paper/bootstrap.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet">
+<link rel="icon" href="favicon.ico?v=1.1">
+    <meta charset="UTF-8">
+</head>
+<body>
+    <header>
+        <div><a id="header">YT-DL</a>
+        <ul class="nav navbar-nav">
+            <li class="active-nav"><a href="/soon">Home</a></li>
+            <li><a href="/soon">About</a></li>
+            <li><a href="/soon">FAQ</a></li></ul>
+            </div>
+    </header>
+    <main>
+        <div class="title" style="color: #111111">Save YT videos</div>
+        <div class="text">MP4, MP3</div>
+        <input id="ytlink" placeholder="Video URL"><button id="download"><a style="color: #fff">MP4 </a><i class="fa fa-download"></i></button><div>
+            <select class="select2 form-control" placeholder="Country" style="width: 15%; cursor: pointer;
+            padding: 5px 0;        
+            appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        display: inline-block;">
+                <optgroup label="MP4">
+                  <option value="137">MP4 1080p (4.53MB) HD</option>
+                  <option value="136">MP4 720p (2.2MB)</option>
+                  <option value="135">MP4 480p (1.1MB)</option>
+                  <option value="18">MP4 360p (696.66KB)</option>
+                  <option value="134">MP4 360p (593.26KB)</option>
+                  <option value="248">WEBM 1080p (2.52MB) HD</option>
+                  <option value="247">WEBM 720p (1.44MB)</option>
+                  <option value="136">WEBM 480p (2.2MB)</option>
+                </optgroup>
+                <optgroup label="MP3">
+                  <option value="highestaudio">MP3 Highest</option>
+                  <option value="lowestaudio">MP3 Lowest</option>
+                </optgroup>
+              </select>
+        <p id="status" style="display: none">Invalid URL!</p>
+    </main>
+    <footer>&copy; <em id="date"></em>no nie wiem</footer>
+    <script src="./js/req.js"></script>  
+</body>
